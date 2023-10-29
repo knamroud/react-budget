@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Budget from './components/Budget';
 //Code to import Remaining.js
 import Remaining from './components/Remaining';
+//Code to import ExpenseTotal.js
+import ExpenseTotal from './components/ExpenseTotal';
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -29,7 +31,10 @@ const App = () => {
                         }        
 
                         {
-                            /* Add ExpenseTotal component here */
+                        // ExpenseTotal component
+                        <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
                         }        
                        
                         {
